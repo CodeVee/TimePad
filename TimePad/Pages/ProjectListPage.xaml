@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TimePad.Pages.ProjectListPage"
+             Title="ProjectListPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="16, 32">
+
+            <FlexLayout HeightRequest="34"
+                    JustifyContent="SpaceBetween"
+                    Margin="0, 0, 0, 24">
+                <Label Text="Task"
+                   FontFamily="RubikMedium"
+                   TextColor="#070417"
+                   FontAttributes="Bold"
+                   FontSize="24"/>
+                <ImageButton Source="more.svg" />
+            </FlexLayout>
+            <Border StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0"
+                    Margin="0, 0, 0, 32">
+                <VerticalStackLayout HeightRequest="114"
+                                 BackgroundColor="#FAFAFF"
+                                 Padding="16, 24"
+                                 Spacing="24">
+                    <FlexLayout HeightRequest="34"
+                    JustifyContent="SpaceBetween"
+                            AlignItems="Center">
+                        <Label Text="00:32:10"
+                           FontFamily="RubikMedium"
+                           TextColor="#000000"
+                           FontAttributes="Bold"
+                           FontSize="32"/>
+                        <ImageButton Source="right_arrow.svg" HeightRequest="24" />
+                    </FlexLayout>
+                    <HorizontalStackLayout Spacing="12">
+                        <Image Source="ellipse.png" HeightRequest="12"/>
+                        <Label Text="Rasion Project"
+                           FontFamily="RubikRegular"
+                           FontSize="16"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+            <FlexLayout HeightRequest="30"
+                        AlignItems="Center"
+                        JustifyContent="SpaceBetween">
+                <Label Text="Today"
+                       TextColor="#070417"
+                       FontFamily="RubikMedium"
+                       FontSize="20" />
+                <Label Text="See All"
+                       FontSize="16"
+                       FontFamily="RubikRegular"
+                       TextColor="#070417" />
+            </FlexLayout>
+            <Grid HeightRequest="396"
+                  Margin="0, 16, 0, 0"
+                  ColumnDefinitions="*"
+                  RowDefinitions="*, *, *, *"
+                  RowSpacing="16">
+
+                <Border StrokeThickness="0"
+                        StrokeShape="RoundRectangle 12">
+                    <Grid BackgroundColor="#FAFAFF"
+                          Padding="16"
+                          ColumnDefinitions="44, *"
+                          ColumnSpacing="16"
+                          RowDefinitions="*">
+                        <Border StrokeThickness="0"
+                                StrokeShape="Ellipse"
+                                BackgroundColor="#9B51E0"
+                                HeightRequest="44"
+                                Padding="10"
+                                HorizontalOptions="Start"
+                                VerticalOptions='Start'>
+                            <Image Source="desktop.svg" />
+                        </Border>
+                        <VerticalStackLayout Spacing="8" 
+                                             Grid.Column="1">
+                            <FlexLayout HeightRequest="20"
+                                        JustifyContent="SpaceBetween"
+                                        AlignItems="Center">
+                                <Label Text="UI Design"
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       FontFamily="RubikMedium"/>
+                                <Label Text="00:42:21"
+                                       FontFamily="RubikRegular"
+                                       FontSize="12"
+                                       TextColor="#4F4F4F"/>
+                            </FlexLayout>
+                            <FlexLayout HeightRequest="28"
+                                        JustifyContent="SpaceBetween"
+                                        AlignItems="Center">
+                                <HorizontalStackLayout Spacing="8">
+                                    <Border BackgroundColor="#FFEFF1"
+                                            Padding="8"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 6">
+                                        <Label Text="Work"
+                                               TextColor="#FD5B71"
+                                               FontSize="12"
+                                               FontFamily="RubikRegular"/>
+                                    </Border>
+                                    <Border BackgroundColor="#F5EEFC"
+                                            Padding="8"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 6">
+                                        <Label Text="Raison Project"
+                                               TextColor="#9B51E0"
+                                               FontSize="12"
+                                               FontFamily="RubikRegular"/>
+                                    </Border>
+                                </HorizontalStackLayout>
+                                <Image Source="play.svg" />
+                            </FlexLayout>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+                <Border StrokeThickness="0"
+                        StrokeShape="RoundRectangle 12"
+                        Grid.Row="1">
+                    <Grid BackgroundColor="#FAFAFF"
+                          Padding="16"
+                          ColumnDefinitions="44, *"
+                          ColumnSpacing="16"
+                          RowDefinitions="*">
+                        <Border StrokeThickness="0"
+                                StrokeShape="Ellipse"
+                                BackgroundColor="#FFA656"
+                                HeightRequest="44"
+                                Padding="10"
+                                HorizontalOptions="Start"
+                                VerticalOptions='Start'>
+                            <Image Source="barbell.svg" />
+                        </Border>
+                        <VerticalStackLayout Spacing="8" 
+                                             Grid.Column="1">
+                            <FlexLayout HeightRequest="20"
+                                        JustifyContent="SpaceBetween"
+                                        AlignItems="Center">
+                                <Label Text="100x Sit-Up"
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       FontFamily="RubikMedium"/>
+                                <Label Text="00:14:06"
+                                       FontFamily="RubikRegular"
+                                       FontSize="12"
+                                       TextColor="#4F4F4F"/>
+                            </FlexLayout>
+                            <FlexLayout HeightRequest="28"
+                                        JustifyContent="SpaceBetween"
+                                        AlignItems="Center">
+                                <HorizontalStackLayout Spacing="8">
+                                    <Border BackgroundColor="#F2F2F2"
+                                            Padding="8"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 6">
+                                        <Label Text="Personal"
+                                               TextColor="#828282"
+                                               FontSize="12"
+                                               FontFamily="RubikRegular"/>
+                                    </Border>
+                                    <Border BackgroundColor="#FEF5ED"
+                                            Padding="8"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 6">
+                                        <Label Text="Workout"
+                                               TextColor="#FFA656"
+                                               FontSize="12"
+                                               FontFamily="RubikRegular"/>
+                                    </Border>
+                                </HorizontalStackLayout>
+                                <Image Source="play.svg" />
+                            </FlexLayout>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+                <Border StrokeThickness="0"
+                        StrokeShape="RoundRectangle 12"
+                        Grid.Row="2">
+                    <Grid BackgroundColor="#FAFAFF"
+                          Padding="16"
+                          ColumnDefinitions="44, *"
+                          ColumnSpacing="16"
+                          RowDefinitions="*">
+                        <Border StrokeThickness="0"
+                                StrokeShape="Ellipse"
+                                BackgroundColor="#FD5B71"
+                                HeightRequest="44"
+                                Padding="10"
+                                HorizontalOptions="Start"
+                                VerticalOptions='Start'>
+                            <Image Source="code_slash.svg" />
+                        </Border>
+                        <VerticalStackLayout Spacing="8" 
+                                             Grid.Column="1">
+                            <FlexLayout HeightRequest="20"
+                                        JustifyContent="SpaceBetween"
+                                        AlignItems="Center">
+                                <Label Text="Learn HTML and CSS"
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       FontFamily="RubikMedium"/>
+                                <Label Text="00:24:52"
+                                       FontFamily="RubikRegular"
+                                       FontSize="12"
+                                       TextColor="#4F4F4F"/>
+                            </FlexLayout>
+                            <FlexLayout HeightRequest="28"
+                                        JustifyContent="SpaceBetween"
+                                        AlignItems="Center">
+                                <HorizontalStackLayout Spacing="8">
+                                    <Border BackgroundColor="#F2F2F2"
+                                            Padding="8"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 6">
+                                        <Label Text="Personal"
+                                               TextColor="#828282"
+                                               FontSize="12"
+                                               FontFamily="RubikRegular"/>
+                                    </Border>
+                                    <Border BackgroundColor="#FFEFF1"
+                                            Padding="8"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 6"
+                                            HeightRequest="30">
+                                        <Label Text="Coding"
+                                               TextColor="#FD5B71"
+                                               FontSize="12"
+                                               FontFamily="RubikRegular"/>
+                                    </Border>
+                                </HorizontalStackLayout>
+                                <Image Source="play.svg" />
+                            </FlexLayout>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+                <Border StrokeThickness="0"
+                        StrokeShape="RoundRectangle 12"
+                        Grid.Row="3">
+                    <Grid BackgroundColor="#FAFAFF"
+                          Padding="16"
+                          ColumnDefinitions="44, *"
+                          ColumnSpacing="16"
+                          RowDefinitions="*">
+                        <Border StrokeThickness="0"
+                                StrokeShape="Ellipse"
+                                BackgroundColor="#07E092"
+                                HeightRequest="44"
+                                Padding="10"
+                                HorizontalOptions="Start"
+                                VerticalOptions='Start'>
+                            <Image Source="book.svg" />
+                        </Border>
+                        <VerticalStackLayout Spacing="8" 
+                                             Grid.Column="1">
+                            <FlexLayout HeightRequest="20"
+                                        JustifyContent="SpaceBetween"
+                                        AlignItems="Center">
+                                <Label Text="Read 10 pages of book"
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       FontFamily="RubikMedium"/>
+                                <Label Text="00:21:09"
+                                       FontFamily="RubikRegular"
+                                       FontSize="12"
+                                       TextColor="#4F4F4F"/>
+                            </FlexLayout>
+                            <FlexLayout HeightRequest="28"
+                                        JustifyContent="SpaceBetween"
+                                        AlignItems="Center">
+                                <HorizontalStackLayout Spacing="8">
+                                    <Border BackgroundColor="#F2F2F2"
+                                            Padding="8"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 6">
+                                        <Label Text="Personal"
+                                               TextColor="#828282"
+                                               FontSize="12"
+                                               FontFamily="RubikRegular"/>
+                                    </Border>
+                                    <Border BackgroundColor="#E6FCF4"
+                                            HeightRequest="30"
+                                            Padding="8"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 6">
+                                        <Label Text="Raison Project"
+                                               TextColor="#07E092"
+                                               FontSize="12"
+                                               FontFamily="RubikRegular"/>
+                                    </Border>
+                                </HorizontalStackLayout>
+                                <Image Source="play.svg" />
+                            </FlexLayout>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
